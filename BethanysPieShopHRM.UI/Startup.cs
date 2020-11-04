@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BethanysPieShopHRM.UI.Services;
 using BethanysPieShopHRM.UI.Data;
+using BethanysPieShopHRM.UI.Pages;
 
 namespace BethanysPieShopHRM.UI
 {
@@ -39,6 +40,7 @@ namespace BethanysPieShopHRM.UI
             services.AddScoped<ITaskDataService, TaskDataService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ISurveyDataService, SurveyDataService>();
+            services.AddScoped<IExpenseApprovalService, ExpenseApprovalService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
